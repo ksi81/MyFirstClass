@@ -1,14 +1,15 @@
 body {
     height: 100%;
     width: 100%;
-       margin: 0px;
+    margin: 0px;
     padding: 0px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-      font-style: normal;
+    font-style: normal;
     font-variant: normal;
     /* font-weight: 700; */
     /* line-height: 26.4px; */
 }
+
 h1 {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 2rem;
@@ -29,7 +30,7 @@ h3 {
 
 p {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-   
+
     font-style: normal;
     font-variant: normal;
     font-weight: 200;
@@ -42,7 +43,7 @@ blockquote {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-  
+
 }
 
 pre {
@@ -67,7 +68,7 @@ pre {
 
 .containerfirst,
 footer {
- 
+
     background-color: #f8dadf;
 }
 
@@ -114,13 +115,13 @@ h2 {
 
 }
 
-p{
+p {
     font-size: 1.5rem;
     margin-top: 2%;
 }
 
 label {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-top: 2%;
 }
 
@@ -221,25 +222,18 @@ a {
 
 @media only screen and (max-width: 600px) {
     .containersecond {
-        /* margin: auto; */
         width: 100%;
-        /* border: 3px solid #73AD21; */
         padding: 10px;
-        /* background: #dd1d66; */
         overflow-x: hidden;
-
     }
 
     .main-pic img {
         width: 83%;
         margin-bottom: 16px;
-
     }
 
     body {
-      
         overflow-x: hidden;
-        
     }
 
     .legal-txt {
@@ -247,12 +241,6 @@ a {
         padding: 4%;
     }
 
-    h2 {
-        font-size: 1.15rem;
-    }
-    h3 {
-        font-size: 1.1rem;
-    }
     .pink {
         font-size: 1.4rem;
     }
