@@ -1,0 +1,175 @@
+.logo {
+    width: 20%;
+}
+
+.main-pic {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -38px;
+}
+
+.containerfirst,
+footer {
+    background-color: #f8dadf;
+}
+
+.main-txt {
+    margin: auto;
+    /* width: 50%; */
+    padding: 10px;
+    text-align: center;
+}
+
+.main-txt2 {
+    margin: auto;
+    /* width: 50%; */
+    padding: 10px;
+
+}
+
+
+
+.pink {
+    color: #e74683;
+}
+
+.thumb {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+
+.containersecond {
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid #73AD21; */
+    padding: 10px;
+
+}
+
+p,
+label {
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.button_send {
+    text-align: center;
+}
+
+
+
+.psevdoFile {
+    overflow: hidden;
+    background: url(img/inputFileBtn.gif) right top no-repeat;
+    position: relative;
+    display: inline-block;
+}
+
+.fileInput {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 199px;
+    opacity: 0;
+    filter: alpha(opacity:0);
+}
+
+.inputFileText {
+    /* border: 2px solid #e74683;
+    border-radius: 7px;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    width: 156px;
+    height: 50px;
+    padding: 0 3px;
+    margin: 0 54px 0 0;
+    padding-left: 45px; */
+    width: 130px;
+    text-align: center;
+
+}
+
+button {
+    border: 1px solid #e74683;
+    border-radius: 7px;
+    width: 156px;
+    height: 50px;
+
+}
+
+.btn-grad {
+    border: 1px solid #efabb6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #F8DADF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F8DADF), to(#e74683));
+    background-image: -webkit-linear-gradient(top, #F8DADF, #e74683);
+    background-image: -moz-linear-gradient(top, #F8DADF, #e74683);
+    background-image: -ms-linear-gradient(top, #F8DADF, #e74683);
+    background-image: -o-linear-gradient(top, #F8DADF, #e74683);
+    background-image: linear-gradient(to bottom, #F8DADF, #e74683);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F8DADF, endColorstr=#e74683);
+
+}
+
+.btn-grad:hover {
+    border: 1px solid #e88495;
+    background-color: #f0afba;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0afba), to(#dd1d66));
+    background-image: -webkit-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: -moz-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: -ms-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: -o-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: linear-gradient(to bottom, #f0afba, #dd1d66);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f0afba, endColorstr=#dd1d66);
+}
+
+.legal-txt {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    /* Отменяем подчеркивание у ссылки */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .containersecond {
+        /* margin: auto; */
+        width: 100%;
+        /* border: 3px solid #73AD21; */
+        padding: 10px;
+        /* background: #dd1d66; */
+
+    }
+
+    .main-pic img {
+        width: 83%;
+        margin-bottom: 16px;
+
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}

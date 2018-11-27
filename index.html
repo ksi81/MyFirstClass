@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/file.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="img/mklogo.png" alt="">
+
+    </header>
+
+    <main class="main">
+
+        <div class="main-pic">
+            <img src="img/main-pic.png" alt="">
+        </div>
+        <div class="containerfirst">
+            <div class="main-txt">
+
+                <h1 class="pink">Вітаємо, {{Name}}!</h1>
+                <h2>Ви нещодавно приєдналися до «Мері Кей» <br> та робите перші кроки у бізнесі.</h2>
+                <h2 class="pink">Повідом нас про свій перший клас з краси </h2>
+                <h2>у 2 прості кроки та отримайте можливість придбати <br> <b>набір для проведення класу</b> <br>на 1
+                    особу за
+                    спеціальною ціною.
+                </h2>
+            </div>
+        </div>
+             <div class="containersecond">
+            <div class="main-txt2">
+                <div class="row button-container">
+                    <span class="psevdoFile">
+                        <p><b>1. Завантажте одне фото* свого першого класу з краси</b></p>
+                        <!-- <label>Вибрати файлwww:</label> -->
+                        <!-- <input id="psevdoFileValue" class="inputFileText" type="text"/>
+                <span>Вибрати файл</span> -->
+                        <input class="fileInput" type="file" id="file" name="file" />
+                        <label class="btn-grad inputFileText  " for="file">ВИБРАТИ ФАЙЛ</label>
+                    </span>
+                </div>
+                <div class="row">
+                    <span id="output"></span>
+                </div>
+                <form class="forma" action="">
+                    <p><b>2. Дайте відповіді на запитання</b></p>
+                    <label for="">Чи відвідували ви клас із краси до того, як стали Консультантом?</label><br><br>
+                    <input type="radio" name="visit" value="yes">ТАК
+                    <input type="radio" name="visit" value="no">НІ<br>
+                    <br>
+
+                    <label for="">Чи відбувся продаж продукції на проведеному вами класі з краси?</label><br><br>
+                    <input type="radio" name="sale" value="yes">ТАК
+                    <input type="radio" name="sale" value="no">НІ<br><br>
+                    <label for="">Чи призначили ви наступний клас з краси?</label><br><br>
+                    <input type="radio" name="mkclass" value="yes">ТАК
+                    <input type="radio" name="mkclass" value="no">НІ<br><br>
+            </div>
+        </div>
+
+        <div class="button_send">
+                 <button class="btn-grad" type="submit" value="Submit"><a href="page2.html">ПІДТВЕРДИТИ</a></button>
+        </div>
+        </form>
+
+    </main>
+    <footer>
+        <p class="legal-txt">*Завантажуючи фото Консультант дає ТОВ «Мері Кей (Україна) Лтд.» (далі - компанія) згоду на його
+            використання шляхом, включаючи, але не обмежуючись, шляхом переробки, адаптації фото, розміщення фото в
+            друкованих, Інтернет-виданнях компанії, сторінках компанії у соціальних мережах, презентаціях та
+            використання в інших рекламно- інформаційних матеріалах, на території України протягом всього строку
+            охорони прав інтелектуальної власності на таке фото, а також підтверджує та гарантує, що він отримав
+            необхідні згоди та дозволи від усіх третіх осіб, в тому числі зображених на фото, на його передачу компанії
+            для використання способами зазначеними вище, та у випадку виникнення будь-яких претензій чи позовів третіх
+            осіб самостійно та за свій рахунок зобов’язується їх врегулювати.</p>
+
+    </footer>
+
+</body>
+<script>
+    function handleFileSelect(evt) {
+        var file = evt.target.files; // FileList object
+        var f = file[0];
+        // Only process image files.
+        if (!f.type.match('image.*')) {
+            alert("Тільки фото, будь ласка....");
+        }
+        var reader = new FileReader();
+        // Closure to capture the file information.
+        reader.onload = (function (theFile) {
+            return function (e) {
+                // Render thumbnail.
+                var span = document.createElement('span');
+                span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result,
+                    '" />'
+                ].join('');
+                document.getElementById('output').insertBefore(span, null);
+            };
+        })(f);
+        // Read in the image file as a data URL.
+        reader.readAsDataURL(f);
+    }
+    document.getElementById('file').addEventListener('change', handleFileSelect, false);
+</script>
+
+</html>
