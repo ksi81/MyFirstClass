@@ -1,5 +1,7 @@
 body {
-    
+    height: 100%;
+    width: 100%;
+   
     margin: 0px;
     padding: 0px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
