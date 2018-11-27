@@ -240,8 +240,10 @@ a {
         line-height: 10px;
         padding: 4%;
     }
-
-    .pink {
-        font-size: 1.4rem;
+    label {
+        font-size: 1rem;
+        margin-top: 2%;
     }
+
+
 }
