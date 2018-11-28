@@ -242,8 +242,10 @@ a {
 
     body {
         overflow-x: hidden;
+        .element::-webkit-scrollbar { width: 0; }
     }
-
+    body::-webkit-scrollbar { width: 0%; }
+    
     .legal-txt {
         line-height: 10px;
         padding: 4%;
