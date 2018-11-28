@@ -229,7 +229,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     .containersecond {
-        /* width: 100%; */
+        width: 90%;
         /* padding: 10px; */
         /* overflow-x: hidden; */
         /* width: 100%;  */
@@ -242,7 +242,7 @@ a {
 
     body {
         overflow-x: hidden;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     }
     body::-webkit-scrollbar { width: 0%; }
     
