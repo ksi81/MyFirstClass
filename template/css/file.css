@@ -218,6 +218,12 @@ a {
     text-decoration: none;
     /* Отменяем подчеркивание у ссылки */
 }
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: white;
+}
 
 
 @media only screen and (max-width: 600px) {
