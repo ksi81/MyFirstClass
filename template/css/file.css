@@ -242,7 +242,7 @@ a {
 
     body {
         overflow-x: hidden;
-        .element::-webkit-scrollbar { width: 0; }
+        overflow-y: hidden;
     }
     body::-webkit-scrollbar { width: 0%; }
     
