@@ -1,0 +1,136 @@
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    /* font-weight: 700; */
+    /* line-height: 26.4px; */
+}
+
+.wrapper {
+    padding: 30px 150px 30px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: -webkit-center;
+
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-left: 40px;
+}
+
+
+.img-thumbnail {
+    background-size: contain;
+    max-height: 200px;
+    background-position: center;
+    width: auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: grey;
+    padding: 10px;
+    min-height: 180px;
+}
+
+.data {
+    line-height: 5px;
+    padding-bottom: 25px;
+}
+
+.approve-all {
+    text-align: right;
+}
+
+
+.card {
+    margin: 5px;
+    padding: 5px;
+    display: inline-flex;
+}
+
+
+
+
+ul.hor_nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul.hor_nav li {
+    display: inline-flex;
+    margin: 4px;
+    padding: 2px;
+    background-color: #f9ebf1;
+    border: 1px solid #e88495;
+    width: 300px;
+    height: 300px;
+}
+
+.one_block {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    display: inline;
+}
+
+.picture {
+    border: 1px solid #e74683;
+    /* background-color: rebeccapurple; */
+    width: 297px;
+    height: 180px;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.picture img {
+
+    background-size: contain;
+    max-height: 179px;
+    background-position: center;
+    width: auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+button {
+    border: 1px solid #e74683;
+    border-radius: 5px;
+    /* width: 156px; */
+    height: 30px;
+    margin-right: 34px;
+    margin-left: 29px;
+}
+
+.disapprove:hover {
+    border: 1px solid #e88495;
+    background-color: #f0afba;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0afba), to(#dd1d66));
+    background-image: -webkit-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: -moz-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: -ms-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: -o-linear-gradient(top, #f0afba, #dd1d66);
+    background-image: linear-gradient(to bottom, #f0afba, #dd1d66);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f0afba, endColorstr=#dd1d66);
+}
+
+.approve {
+    background-color: greenyellow;
+    border: 1px solid green;
+}
+
+.approve:hover {
+    background-color: green;
+    border: 1px solid green;
+}

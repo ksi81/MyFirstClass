@@ -227,6 +227,54 @@ a {
 }
 
 
+/* page4  */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.grid-item img {
+    width: 100px;
+    
+}
+li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 4px;
+    padding: 2px;
+   }
+
+
+/* page4  */
+
+
+ul.hor_nav {
+    margin: 0;
+    padding: 0;
+    }
+    ul.hor_nav li {
+    display: inline;
+    margin-right: 4px;
+    padding: 2px;
+    }
+
+
+
+
 @media only screen and (max-width: 668px) {
    .containersecond {
        width: 90%;
