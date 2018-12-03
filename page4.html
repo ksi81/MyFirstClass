@@ -71,8 +71,16 @@
     </div>
     <script>
         $(function () {
-            $('#button').on('click', function (e) {
-                $('#mycart').slideToggle(function () {
+            $('.btn-success').on('click', function (e) {
+                console.log(e.target)
+                console.log($(this).parents("btn-success"))
+                $(this).each(function(
+                    
+                )
+                // $('.card').slideToggle(function ()
+                 {
+                    $(this).parent().parent().hide()
+                    console.log(e.target)
                     console.log($(e.target).is(':visible'));
 
                 });
